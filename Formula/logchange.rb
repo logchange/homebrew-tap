@@ -32,4 +32,9 @@ class Logchange < Formula
     chmod 0755, "#{libexec}/logchange-#{os_arch}/logchange"
     bin.write_exec_script "#{libexec}/logchange-#{os_arch}/logchange"
   end
+
+  test do
+    output = shell_output("#{bin}/logchange --version")
+    assert_match version.to_s, output
+  end
 end
