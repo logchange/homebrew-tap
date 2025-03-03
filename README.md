@@ -17,9 +17,10 @@ brew install logchange
 
 ## Formulae update
 
-To update your logchange formula invoke following command:
+To update your logchange formula invoke following commands:
 
 ```sh
+brew update
 brew upgrade logchange
 ```
 
