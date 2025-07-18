@@ -6,15 +6,15 @@ class Logchange < Formula
 
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/logchange/logchange/releases/download/#{version}/logchange-linuxx64.zip"
-    sha256 "cb6b9088157d287cec5650a0ec6044fa8596edd9877f23e60066b20fc3fc71c5"
+    sha256 "cb26d178e2a9eebb6be9f0a275717d0f7983e1e777807300df0cd2dbd57523e1"
   end
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/logchange/logchange/releases/download/#{version}/logchange-darwinarm64.zip"
-    sha256 "6c984383e23d719b181b5c56274a343fed31d2c5d44e1712032809698e4dbb73"
+    sha256 "29eff08c645fea5263902550ab8c12950fe6ec7264cacb9101866858650f946b"
   end
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/logchange/logchange/releases/download/#{version}/logchange-darwinx64.zip"
-    sha256 "8d337e41559b6cde082265c1fa656e9ba121968b0f1fde95ed87b59d9323d476"
+    sha256 "9f61b9aa0c98fc5e18da9ec5db2ecc286405bc7d7e5951cbf3f114852ba5e13b"
   end
 
   def install
