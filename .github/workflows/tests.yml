@@ -19,8 +19,9 @@ jobs:
         id: set-up-homebrew
         uses: Homebrew/actions/setup-homebrew@master
 
-      - name: Clean corrupted Homebrew gem cache
-        run: rm -rf "$(brew --repo)/Library/Homebrew/vendor/bundle"
+      - name: Remove corrupt bundler gem file
+        run: |
+          rm -f "$(brew --repo)/Library/Homebrew/vendor/bundle/ruby/3.4.0/cache/bundler-2.6.8.gem"
 
       - run: brew test-bot --only-cleanup-before
 
