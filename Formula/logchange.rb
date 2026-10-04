@@ -1,20 +1,20 @@
 class Logchange < Formula
   desc "CLI tool for managing and generating CHANGELOG.md"
   homepage "https://github.com/logchange/logchange"
-  version "1.19.16"
+  version "1.20.0"
   license "Apache-2.0"
 
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/logchange/logchange/releases/download/#{version}/logchange-linuxx64.zip"
-    sha256 "d0e89e1256c2b63a91f542d58402a1e44c16fd15b6da8d8923131411da243673"
+    sha256 "e1e82bc21e9c5734e5ed56795b4d6d800b070bd402d9fe30a4ddeabb11775af2"
   end
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/logchange/logchange/releases/download/#{version}/logchange-darwinarm64.zip"
-    sha256 "69557257453cb445d0d28286026f7da3d3bd15a13b9876bb38ce4d3abad85078"
+    sha256 "34016377fb39526484bc9687e2fcb28eeb51e1c1594da2ddb6489bddce9fe80d"
   end
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/logchange/logchange/releases/download/#{version}/logchange-darwinx64.zip"
-    sha256 "4a9f71db26e9e23f7a616acafc01a353ca29aaf33a9d45cdf9c6b1158e29fe17"
+    sha256 "43fd20f4620d120c0d2f327c001d92471d5696a52e40600993aa9112a14c1420"
   end
 
   def install
